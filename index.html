@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Connect-Four</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="mainTitle">
+            <span class="Title">C</span>
+            <span class="Title">O</span>
+            <span class="Title">N</span>
+            <span class="Title">N</span>
+            <span class="Title">E</span>
+            <span class="Title">C</span>
+            <span class="Title">T</span>
+            <span class="Title">F</span>
+            <span class="Title">O</span>
+            <span class="Title">U</span>
+            <span class="Title">R</span>
+        </div>
+
+        <table id="mainTable">
+            <tbody>
+                <tr>
+                    <td id="00" onclick="optionSelected(0,0,'00');"></td>
+                    <td id="01" onclick="optionSelected(0,1,'01');"></td>
+                    <td id="02" onclick="optionSelected(0,2,'02');"></td>
+                    <td id="03" onclick="optionSelected(0,3,'03');"></td>
+                    <td id="04" onclick="optionSelected(0,4,'04');"></td>
+                    <td id="05" onclick="optionSelected(0,5,'05');"></td>
+                    <td id="06" onclick="optionSelected(0,6,'06');"></td>
+                </tr>
+                <tr>
+                    <td id="10" onclick="optionSelected(1,0,'10');"></td>
+                    <td id="11" onclick="optionSelected(1,1,'11');"></td>
+                    <td id="12" onclick="optionSelected(1,2,'12');"></td>
+                    <td id="13" onclick="optionSelected(1,3,'13');"></td>
+                    <td id="14" onclick="optionSelected(1,4,'14');"></td>
+                    <td id="15" onclick="optionSelected(1,5,'15');"></td>
+                    <td id="16" onclick="optionSelected(1,6,'16');"></td>
+                </tr>
+                <tr>
+                    <td id="20" onclick="optionSelected(2,0,'20');"></td>
+                    <td id="21" onclick="optionSelected(2,1,'21');"></td>
+                    <td id="22" onclick="optionSelected(2,2,'22');"></td>
+                    <td id="23" onclick="optionSelected(2,3,'23');"></td>
+                    <td id="24" onclick="optionSelected(2,4,'24');"></td>
+                    <td id="25" onclick="optionSelected(2,5,'25');"></td>
+                    <td id="26" onclick="optionSelected(2,6,'26');"></td>
+                </tr>
+                <tr>
+                    <td id="30" onclick="optionSelected(3,0,'30');"></td>
+                    <td id="31" onclick="optionSelected(3,1,'31');"></td>
+                    <td id="32" onclick="optionSelected(3,2,'32');"></td>
+                    <td id="33" onclick="optionSelected(3,3,'33');"></td>
+                    <td id="34" onclick="optionSelected(3,4,'34');"></td>
+                    <td id="35" onclick="optionSelected(3,5,'35');"></td>
+                    <td id="36" onclick="optionSelected(3,6,'36');"></td>
+                </tr>
+                <tr>
+                    <td id="40" onclick="optionSelected(4,0,'40');"></td>
+                    <td id="41" onclick="optionSelected(4,1,'41');"></td>
+                    <td id="42" onclick="optionSelected(4,2,'42');"></td>
+                    <td id="43" onclick="optionSelected(4,3,'43');"></td>
+                    <td id="44" onclick="optionSelected(4,4,'44');"></td>
+                    <td id="45" onclick="optionSelected(4,5,'45');"></td>
+                    <td id="46" onclick="optionSelected(4,6,'46');"></td>
+                </tr>
+                <tr>
+                    <td id="50" onclick="optionSelected(5,0,'50');"></td>
+                    <td id="51" onclick="optionSelected(5,1,'51');"></td>
+                    <td id="52" onclick="optionSelected(5,2,'52');"></td>
+                    <td id="53" onclick="optionSelected(5,3,'53');"></td>
+                    <td id="54" onclick="optionSelected(5,4,'54');"></td>
+                    <td id="55" onclick="optionSelected(5,5,'55');"></td>
+                    <td id="56" onclick="optionSelected(5,6,'56');"></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div id="resultWrapper" class="resultContainer">
+            <div id="result" class="centerResult"></div><button class="button" onclick="location.reload()">Reset</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>

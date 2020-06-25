@@ -1,0 +1,101 @@
+body {
+    background-image: url(https://cdn.shopify.com/s/files/1/1199/7150/products/coolarooyellow_1024x1024.jpg?v=1559837292);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Title {
+    background: #49BA00;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 100%;
+    font-size: 50px;
+}
+
+.mainTitle {
+    text-align: center;
+    padding-left: 5%;
+    margin: 30px auto;
+}
+
+#mainTable {
+    margin-top: 50px;
+}
+
+table {
+    width: 60vh;
+    border-collapse: collapse;
+    border: 8px solid #49BA00;
+    margin-left: 20%;
+}
+
+td {
+    width: calc( 90vh /7);
+    cursor: default;
+    user-select: none;
+    padding: 5px;
+}
+
+td:before {
+    content: "";
+    display: block;
+    width: calc( 90vh /6);
+    height: calc( 70vh /6);
+    border-radius: 50%;
+    box-shadow: inset .1vh .1vh 1vh .1vh rgba( 0, 0, 0, .4);
+}
+
+td.red:before {
+    background-color: red;
+    width: calc( 90vh /6);
+    height: calc( 70vh /6);
+}
+
+td.black:before {
+    background-color: black;
+    width: calc( 90vh /6);
+    height: calc( 70vh /6);
+}
+
+.black {
+    border-radius: 50%;
+}
+
+.red {
+    border-radius: 50%;
+}
+
+.disableTable {
+    pointer-events: none;
+}
+
+.resultContainer {
+    display: none;
+    width: 500px;
+    height: 120px;
+    background: #49BA00;
+    text-align: center;
+    font: 4vh sans-serif;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+}
+
+.centerResult{
+    text-align: center;
+    padding-top: 38px;
+}
+
+.button {
+    width: 100px;
+    margin: 35px;
+    background-color: yellow;
+    text-align: center;
+    font: 4vh sans-serif;
+    border: 1px solid black;
+}
